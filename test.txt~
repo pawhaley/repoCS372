@@ -1,1 +1,6 @@
 this is a conflict
+<<<<<<< HEAD
+master branch comit
+=======
+blablabla im in the branch
+>>>>>>> newb

@@ -1,2 +1,4 @@
 this is a conflict
 master branch comit
+added boath
+blablabla im in the branch
