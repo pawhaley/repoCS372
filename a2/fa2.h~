@@ -1,3 +1,8 @@
+//fa2.h
+//Parker Whaley
+//feb,2016
+//a function to compleate assignment 2
+
 #ifndef FA2_h
 #define FA2_h
 #include <vector>
@@ -32,12 +37,18 @@ inline std::vector<int> asyncSquares(size_t n){
     return retval;
 }
 
-
-std::function<int(int)> repeatFunction(std::function<int(int)> fin, int n){
-	return fin;
-	auto lam=[fin](int n){fin(n);};
-	std::function<int(int)> ret=std::bind(fin,1);
+int RF(std::function<int(int)> fin,int n,int input){
+	for(int i=0;i<n;i++){
+		input=fin(input);
+	}
+	return input;
 }
+
+auto repeatFunction(std::function<int(int)> fin, int n){
+	return fin;
+}
+
+
 
 
 
